@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #d8a9b8;
+    color: #b36d83;
+    display: flex;
+    height: 70px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url("img/brownie3.png");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero img{
+    width: 400px ;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #d8a9b8;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn-hero {
+    background-color: #d8a9b8;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-hero:hover {
+    background-color: #ffffff;
+    color: #b36d83;
+}
+
+.about {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.about li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pricing {
+    padding: 50px 20px;
+    background-color: #f4cfd9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing3{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pricing li {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: inline;
+}
+
+.pricing p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.pricing img{
+    width: 160px;
+}
+
+.btn-pricing {
+    background-color: #b36d83;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px ;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.pricing3{
+    size: 35px;
+    align-items: center;
+}
+
+.btn-pricing:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+footer {
+    background-color: #d8a9b8;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 426px) {
+    header{
+        font-size: 12px;
+    }
+    .hero-text h2{
+        font-size: 25px;
+    }
+    .hero-text p{
+        font-size: 15px;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .hero img{
+        width: 150px;
+    }
+    .btn-hero{
+        font-size: 15px;
+    }
+   
+}
+
+@media(max-width: 426px) {
+    header{
+        font-size: 10px;
+    }
+    header h1, .pricing p{
+        font-size: 12px;
+    }
+    .about h2, .pricing h2{
+        font-size: 20px;
+    }
+    .about p, .about li, .pricing li, footer p{
+        font-size: 15px;
+    }
+    .btn-pricing{
+        font-size: 8px;
+    }
+    .pricing{
+        display: grid;
+    }
+
+}
+
+@media(max-width: 376px) {
+    .btn-pricing {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+    @media(max-width: 321px) {
+        .btn-pricing {
+            width: 80%;
+            text-align: center;
+        }
+
+}
